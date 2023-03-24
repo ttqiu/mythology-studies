@@ -8,7 +8,7 @@
 
 ## **_Description_**
 
-#### Welcome to the Mythology Studies website! Here, you'll discover a treasure trove of information about mystical creatures and their fascinating origins. 
+Welcome to the Mythology Studies website! Here, you'll discover a treasure trove of information about mystical creatures and their fascinating origins. 
 
 This website is designed to be a one-stop-shop for anyone interested in exploring the vast and complex world of mythology. With an intuitive search function and easy-to-use navigation, you can quickly find the information you need about the creatures that have captivated people's imaginations for centuries.
 
