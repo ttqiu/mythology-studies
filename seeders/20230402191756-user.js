@@ -6,7 +6,7 @@ const falso = require('@ngneat/falso')
 module.exports = {
   async up(queryInterface, Sequelize) {
     const users = await Promise.all(
-      [...Array(100)].map(async () => {
+      [...Array(25)].map(async () => {
         let password = falso.randPassword()
         let password_digest = await middleware.hashPassword(password)
         return {
