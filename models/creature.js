@@ -21,14 +21,23 @@ module.exports = (sequelize, DataTypes) => {
   }
   Creature.init(
     {
-      name: DataTypes.STRING,
-      image: DataTypes.STRING,
-      description: DataTypes.STRING
+      name: {
+        type: DataTypes.STRING,
+        allowNull: false
+      },
+      image: {
+        type: DataTypes.STRING,
+        allowNull: false
+      },
+      description: {
+        type: DataTypes.STRING,
+        allowNull: false
+      }
     },
     {
       sequelize,
       modelName: 'Creature',
-      tableName: 'creature'
+      tableName: 'creatures'
     }
   )
   return Creature

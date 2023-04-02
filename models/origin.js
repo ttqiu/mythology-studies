@@ -20,12 +20,15 @@ module.exports = (sequelize, DataTypes) => {
         type: DataTypes.STRING,
         allowNull: false
       },
-      description: DataTypes.TEXT
+      description: {
+        type: DataTypes.STRING,
+        allowNull: false
+      }
     },
     {
       sequelize,
       modelName: 'Origin',
-      tableName: 'origin'
+      tableName: 'origins'
     }
   )
   return Origin
