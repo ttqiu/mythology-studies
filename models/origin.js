@@ -8,8 +8,9 @@ module.exports = (sequelize, DataTypes) => {
      * The `models/index` file will call this method automatically.
      */
     static associate(models) {
-      Origin.hasMany(models.Creature, {
+      Origin.belongsToMany(models.Creature, {
         as: 'creature',
+        through: models.OriginList,
         foreignKey: 'originId'
       })
     }
@@ -21,7 +22,7 @@ module.exports = (sequelize, DataTypes) => {
         allowNull: false
       },
       description: {
-        type: DataTypes.STRING,
+        type: DataTypes.TEXT,
         allowNull: false
       }
     },

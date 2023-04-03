@@ -15,7 +15,7 @@ module.exports = {
         })
         return {
           userId: user.id,
-          classId: creature.id,
+          creatureId: creature.id,
           content: falso.randParagraph(),
           createdAt: new Date(),
           updatedAt: new Date()

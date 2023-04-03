@@ -12,10 +12,10 @@ module.exports = (sequelize, DataTypes) => {
         as: 'commented',
         foreignKey: 'userId'
       })
-      User.hasOne(models.Zodiac, {
+      User.belongsToMany(models.Zodiac, {
         as: 'zodiac',
         through: models.ZodiacList,
-        foreignKey: 'zodiacId'
+        foreignKey: 'userId'
       })
     }
   }
