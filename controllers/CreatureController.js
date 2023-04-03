@@ -24,7 +24,7 @@ const GetCreatures = async (req, res) => {
 const GetCreatureById = async (req, res) => {
   try {
     const creaturesId = parseInt(req.params.creature_id)
-    const creatures = await Creature.findByPk(creaturesId, {
+    const creature = await Creature.findByPk(creaturesId, {
       include: [
         {
           model: Origin,
