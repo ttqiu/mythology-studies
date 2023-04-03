@@ -1,4 +1,4 @@
-const { Origin, Creature } = require('../models')
+const { Origin, Creature, Comment } = require('../models')
 const sequelize = require('sequelize')
 const { Op } = require('sequelize')
 
@@ -12,6 +12,11 @@ const GetCreatures = async (req, res) => {
           as: 'origins',
           through: { attributes: [] },
           attributes: ['origin']
+        },
+        {
+          model: Comment,
+          as: 'comments',
+          attributes: ['content']
         }
       ]
     })
@@ -31,10 +36,15 @@ const GetCreatureById = async (req, res) => {
           as: 'origins',
           through: { attributes: [] },
           attributes: ['origin']
+        },
+        {
+          model: Comment,
+          as: 'comments',
+          attributes: ['content']
         }
       ]
     })
-    res.send(creatures)
+    res.send(creature)
   } catch (error) {
     throw error
   }
