@@ -4,11 +4,13 @@ const OriginRouter = require('./OriginRouter')
 const CreatureRouter = require('./CreatureRouter')
 const OriginListRouter = require('./OriginListRouter')
 const ZodiacRouter = require('./ZodiacRouter')
+const ZodiacListRouter = require('./ZodiacListRouter')
 
 Router.use('/users', UserRouter)
 Router.use('/origins', OriginRouter)
 Router.use('/creatures', CreatureRouter)
 Router.use('/originlists', OriginListRouter)
 Router.use('/zodiacs', ZodiacRouter)
+Router.use('/zodiaclists', ZodiacListRouter)
 
 module.exports = Router
