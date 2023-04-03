@@ -1,4 +1,4 @@
-const { User, Class } = require('../models')
+const { User, Zodiac } = require('../models')
 const middleware = require('../middleware')
 
 const Register = async (req, res) => {
@@ -99,9 +99,9 @@ const GetUserById = async (req, res) => {
       include: [
         {
           model: Zodiac,
-          as: 'zodiacs',
+          as: 'zodiac',
           through: { attributes: [] },
-          attributes: ['id', 'userName', 'email']
+          attributes: ['id', 'zodiac', 'description', 'personality']
         }
       ]
     })
