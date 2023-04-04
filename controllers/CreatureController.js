@@ -35,12 +35,12 @@ const GetCreatureById = async (req, res) => {
           model: Origin,
           as: 'origins',
           through: { attributes: [] },
-          attributes: ['origin']
+          attributes: ['id', 'origin']
         },
         {
           model: Comment,
           as: 'comments',
-          attributes: ['content']
+          attributes: ['id', 'userId', 'content']
         }
       ]
     })
@@ -60,7 +60,15 @@ const GetCreatureByName = async (req, res) => {
           'LIKE',
           name.toLowerCase() + '%'
         )
-      }
+      },
+      include: [
+        {
+          model: Origin,
+          as: 'origins',
+          through: { attributes: [] },
+          attributes: ['origin']
+        }
+      ]
     })
     res.send(creatures)
   } catch (error) {

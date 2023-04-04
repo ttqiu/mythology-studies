@@ -8,15 +8,15 @@
 
 ## **_Description_**
 
-Welcome to the Mythology Studies website! Here, you'll discover a treasure trove of information about mystical creatures and their fascinating origins. 
+Welcome to the Mythology Studies website! Here, you'll discover a treasure trove of information about mystical creatures and their fascinating origins.
 
 This website is designed to be a one-stop-shop for anyone interested in exploring the vast and complex world of mythology. With an intuitive search function and easy-to-use navigation, you can quickly find the information you need about the creatures that have captivated people's imaginations for centuries.
 
 ## **_Technologies Used_**
 
 - PostgreSQL
-- Flask
-- python
+- Sequelize
+- Express
 - React
 - Node
 - HTML
@@ -32,8 +32,8 @@ This website is designed to be a one-stop-shop for anyone interested in explorin
 - Component Hierarchy Diagram for the frontend
 
 - Coding backend using Flask, Python and PostgreSQL to create functions for database.
- 
- -Coding fronted using React, Node, Javascript to create functions for pages.
+
+  -Coding fronted using React, Node, Javascript to create functions for pages.
 
 - HTML pages for information and refer links
 
@@ -68,7 +68,7 @@ This website is designed to be a one-stop-shop for anyone interested in explorin
 
 #### CSS Guide: [w3schools](https://www.w3schools.com/css/)
 
-#### Flask SQLAlchemy Gudie: [Flask SQLAlchemy](https://flask-sqlalchemy.palletsprojects.com/en/3.0.x/)
+#### Sequelize Gudie: [Sequelize](https://sequelize.org/)
 
 #### React.js Cheat Sheet: [upmostly](https://upmostly.com/ultimate-reactjs-cheat-sheet/)
 
