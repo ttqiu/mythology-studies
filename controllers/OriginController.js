@@ -1,6 +1,5 @@
 const { Origin, Creature } = require('../models')
 const sequelize = require('sequelize')
-const { Op } = require('sequelize')
 
 const GetOrigins = async (req, res) => {
   try {
